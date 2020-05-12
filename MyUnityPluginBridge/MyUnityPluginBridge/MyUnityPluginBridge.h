@@ -2,7 +2,7 @@
 //  MyUnityPluginBridge.h
 //  MyUnityPluginBridge
 //
-//  Created by 김승현 on 2020/05/12.
+//  Created by Andy.Kim on 2020/05/12.
 //  Copyright © 2020 example. All rights reserved.
 //
 

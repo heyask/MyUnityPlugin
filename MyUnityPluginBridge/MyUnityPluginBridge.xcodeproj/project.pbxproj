@@ -8,12 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		86EDD2F7246A91AF00A697E3 /* MyUnityPluginBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EDD2F5246A91AF00A697E3 /* MyUnityPluginBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86EDD303246A942900A697E3 /* MyUnityPluginUnityProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDD302246A942900A697E3 /* MyUnityPluginUnityProtocol.m */; };
+		86EDD306246A944A00A697E3 /* MyUnityPluginUnityProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EDD305246A944A00A697E3 /* MyUnityPluginUnityProtocol.h */; };
+		86EDD308246A948000A697E3 /* MyUnityPluginWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EDD307246A948000A697E3 /* MyUnityPluginWrapper.h */; };
+		86EDD30A246A956800A697E3 /* MyUnityPluginWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86EDD309246A956800A697E3 /* MyUnityPluginWrapper.mm */; };
+		86EDD30D246A963D00A697E3 /* MyUnityPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDD30C246A963D00A697E3 /* MyUnityPlugin.framework */; };
+		86EDD30E246A963D00A697E3 /* MyUnityPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86EDD30C246A963D00A697E3 /* MyUnityPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86EDD30F246A963D00A697E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86EDD30E246A963D00A697E3 /* MyUnityPlugin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		86EDD2F2246A91AF00A697E3 /* MyUnityPluginBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyUnityPluginBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EDD2F5246A91AF00A697E3 /* MyUnityPluginBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUnityPluginBridge.h; sourceTree = "<group>"; };
 		86EDD2F6246A91AF00A697E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86EDD302246A942900A697E3 /* MyUnityPluginUnityProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUnityPluginUnityProtocol.m; sourceTree = "<group>"; };
+		86EDD305246A944A00A697E3 /* MyUnityPluginUnityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUnityPluginUnityProtocol.h; sourceTree = "<group>"; };
+		86EDD307246A948000A697E3 /* MyUnityPluginWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUnityPluginWrapper.h; sourceTree = "<group>"; };
+		86EDD309246A956800A697E3 /* MyUnityPluginWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyUnityPluginWrapper.mm; sourceTree = "<group>"; };
+		86EDD30C246A963D00A697E3 /* MyUnityPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyUnityPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EDD30D246A963D00A697E3 /* MyUnityPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +58,7 @@
 			children = (
 				86EDD2F4246A91AF00A697E3 /* MyUnityPluginBridge */,
 				86EDD2F3246A91AF00A697E3 /* Products */,
+				86EDD30B246A963D00A697E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +73,30 @@
 		86EDD2F4246A91AF00A697E3 /* MyUnityPluginBridge */ = {
 			isa = PBXGroup;
 			children = (
+				86EDD301246A940500A697E3 /* Classes */,
 				86EDD2F5246A91AF00A697E3 /* MyUnityPluginBridge.h */,
 				86EDD2F6246A91AF00A697E3 /* Info.plist */,
 			);
 			path = MyUnityPluginBridge;
+			sourceTree = "<group>";
+		};
+		86EDD301246A940500A697E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86EDD302246A942900A697E3 /* MyUnityPluginUnityProtocol.m */,
+				86EDD305246A944A00A697E3 /* MyUnityPluginUnityProtocol.h */,
+				86EDD307246A948000A697E3 /* MyUnityPluginWrapper.h */,
+				86EDD309246A956800A697E3 /* MyUnityPluginWrapper.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		86EDD30B246A963D00A697E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86EDD30C246A963D00A697E3 /* MyUnityPlugin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +107,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86EDD2F7246A91AF00A697E3 /* MyUnityPluginBridge.h in Headers */,
+				86EDD306246A944A00A697E3 /* MyUnityPluginUnityProtocol.h in Headers */,
+				86EDD308246A948000A697E3 /* MyUnityPluginWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +123,7 @@
 				86EDD2EE246A91AF00A697E3 /* Sources */,
 				86EDD2EF246A91AF00A697E3 /* Frameworks */,
 				86EDD2F0246A91AF00A697E3 /* Resources */,
+				86EDD30F246A963D00A697E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EDD30A246A956800A697E3 /* MyUnityPluginWrapper.mm in Sources */,
+				86EDD303246A942900A697E3 /* MyUnityPluginUnityProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		86EDD2E2246A918900A697E3 /* MyUnityPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EDD2E0246A918900A697E3 /* MyUnityPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86EDD300246A93AB00A697E3 /* MyUnityPluginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EDD2FF246A93AB00A697E3 /* MyUnityPluginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86EDD2DD246A918900A697E3 /* MyUnityPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyUnityPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EDD2E0246A918900A697E3 /* MyUnityPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUnityPlugin.h; sourceTree = "<group>"; };
 		86EDD2E1246A918900A697E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86EDD2FF246A93AB00A697E3 /* MyUnityPluginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnityPluginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		86EDD2DF246A918900A697E3 /* MyUnityPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				86EDD2FF246A93AB00A697E3 /* MyUnityPluginController.swift */,
 				86EDD2E0246A918900A697E3 /* MyUnityPlugin.h */,
 				86EDD2E1246A918900A697E3 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					86EDD2DC246A918900A697E3 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EDD300246A93AB00A697E3 /* MyUnityPluginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		86EDD2E6246A918900A697E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyUnityPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		86EDD2E7246A918900A697E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -42,12 +42,12 @@ extern "C" {
         [[MyUnityPluginContoller GetInstance] InitializeWithPluginDelegate:callback];
     }
     
-    const char* __IOS_TestFunc1(const char* _str) {
-        NSString *_strNS = NSStringFromCString(_str);
-        return strdup(CStringFromNSString([[MyUnityPluginContoller GetInstance] TestFunc1WithStr:_strNS]));
+    const char* __IOS_TestFunc1(const char* str) {
+        NSString *strNS = NSStringFromCString(str);
+        return strdup(CStringFromNSString([[MyUnityPluginContoller GetInstance] TestFunc1WithStr:strNS]));
     }
     
-    NSInteger __IOS_TestFunc2(int _num) {
-        return [[MyUnityPluginContoller GetInstance] TestFunc2WithNum:_num];
+    NSInteger __IOS_TestFunc2(int num) {
+        return [[MyUnityPluginContoller GetInstance] TestFunc2WithNum:num];
     }
 }

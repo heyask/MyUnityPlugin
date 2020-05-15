@@ -1,2 +1,2 @@
-rootProject.name='UnityPluginTest'
+rootProject.name='MyUnityPlugin'
 include ':app'

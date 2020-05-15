@@ -1,4 +1,4 @@
-package com.example.unityplugintest
+package com.example.myunityplugin
 
 import org.junit.Test
 

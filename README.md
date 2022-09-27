@@ -2,6 +2,8 @@
 
 유니티플러그인 안드로이드 예제 프로젝트입니다.
 
+![image](https://user-images.githubusercontent.com/13181635/192523041-d491ea03-d7c5-43c4-aefa-dbb18b550b53.png)
+
 ## 가이드
 
 > 아래 블로그 글을 참고해주세요

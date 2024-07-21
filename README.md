@@ -1,6 +1,6 @@
-# MyUnityPlugin-unity
+# MyUnityPlugin
 
-안드로이드와 iOS를 지원하는 유니티플러그인 예제 프로젝트입니다.
+Android와 iOS를 지원하는 유니티플러그인 예제 프로젝트입니다.
 
 ![image](https://user-images.githubusercontent.com/13181635/192523041-d491ea03-d7c5-43c4-aefa-dbb18b550b53.png)
 
